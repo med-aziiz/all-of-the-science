@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 1: Logic and Mathematics - Module 4 Lesson 1</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3, h4 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 1: Logic and Mathematics</h1>
+    <h2>Module 4: Interdisciplinary Applications</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 4.1: Mathematics in Computer Science</h3>
+    <p>Mathematics is the language that powers computer science. In this lesson, we uncover the mathematical foundations essential to computer science through detailed, step-by-step explanations.</p>
+  </section>
+
+  <!-- Step 1: Introduction -->
+  <section>
+    <h4>Step 1: Introduction—Why Mathematics in Computer Science?</h4>
+    <p><strong>Overview:</strong> Mathematics provides the precise language and rigorous framework needed to design efficient algorithms, reason about data structures, and ensure computer programs perform correctly.</p>
+    <p><strong>Key Areas:</strong></p>
+    <ul>
+      <li><strong>Logic &amp; Boolean Algebra:</strong> The backbone of digital circuits and programming logic.</li>
+      <li><strong>Discrete Mathematics:</strong> The study of countable, distinct structures such as sets, graphs, and sequences.</li>
+      <li><strong>Graph Theory &amp; Combinatorics:</strong> Used to model networks, optimize routes, and analyze complex data structures.</li>
+      <li><strong>Algorithms &amp; Complexity:</strong> Help us understand problem-solving efficiency and measure performance.</li>
+    </ul>
+  </section>
+
+  <!-- Step 2: Boolean Logic and Digital Circuits -->
+  <section>
+    <h4>Step 2: Boolean Logic and Digital Circuits</h4>
+    <p><strong>Boolean Logic:</strong> Deals with true/false values (1 and 0) and uses operators such as AND, OR, and NOT.</p>
+    <p><strong>Step-by-Step Explanation:</strong></p>
+    <ul>
+      <li><strong>Logical Variables:</strong> Can only be 1 (true) or 0 (false).</li>
+      <li><strong>Basic Operators:</strong>
+        <ul>
+          <li><strong>AND (∧):</strong> True if both inputs are true.</li>
+          <li><strong>OR (∨):</strong> True if at least one input is true.</li>
+          <li><strong>NOT (¬):</strong> Inverts the truth value.</li>
+        </ul>
+      </li>
+      <li><strong>Truth Tables:</strong> Display results for all possible input values.</li>
+    </ul>
+    <p><strong>Example (AND Operator):</strong></p>
+    <table>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>A ∧ B</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <!-- an image of digital circuits implementing Boolean logic -->
+    <p><strong>Application:</strong> Boolean logic is implemented in hardware through digital circuits where each logic gate (AND, OR, NOT, etc.) corresponds to a physical electronic circuit that processes data and makes decisions.</p>
+  </section>
+
+  <!-- Step 3: Discrete Mathematics in Data Structures and Algorithms -->
+  <section>
+    <h4>Step 3: Discrete Mathematics in Data Structures and Algorithms</h4>
+    <p><strong>Definition:</strong> Discrete mathematics deals with countable or separable structures—including set theory, combinatorics, graph theory, and logic.</p>
+    <p><strong>Key Concepts:</strong></p>
+    <ul>
+      <li><strong>Set Theory:</strong> Organizes data (e.g., a database of users can be thought of as a set).</li>
+      <li><strong>Graph Theory:</strong> Studies graphs composed of vertices (nodes) and edges (connections).  
+        <em>Example:</em> A network where each computer is a vertex and connections are edges.
+      </li>
+      <li><strong>Combinatorics:</strong> Involves counting and arranging objects, such as determining the number of ways to arrange a password from a set of characters.</li>
+    </ul>
+    <p><strong>Application in Algorithms:</strong> Principles from discrete mathematics are fundamental in designing and analyzing algorithms for sorting, searching, and optimization.</p>
+  </section>
+
+  <!-- Step 4: Algorithms and Complexity -->
+  <section>
+    <h4>Step 4: Algorithms and Complexity</h4>
+    <p><strong>Definition:</strong> An algorithm is a finite, well-defined sequence of instructions used to solve a problem.</p>
+    <p><strong>Detailed Explanation:</strong></p>
+    <ol>
+      <li><strong>Formulating an Algorithm:</strong> Understand the problem, break it into manageable steps, and write each step clearly (or in pseudocode).</li>
+      <li><strong>Example: Bubble Sort</strong>
+        <ul>
+          <li>Compare adjacent elements.</li>
+          <li>Swap them if they are in the wrong order.</li>
+          <li>Repeat until no swaps are needed.</li>
+        </ul>
+      </li>
+      <li><strong>Analyzing Complexity:</strong>
+        <ul>
+          <li><strong>Time Complexity:</strong> How runtime increases with input size (e.g., O(n²) for Bubble Sort).</li>
+          <li><strong>Space Complexity:</strong> How much extra memory is needed.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Step 5: Putting It All Together -->
+  <section>
+    <h4>Step 5: Putting It All Together</h4>
+    <p><strong>Integration:</strong> Mathematics in computer science forms an interconnected web. Boolean logic forms the basis of circuits, discrete mathematics organizes data, and complexity theory ensures efficient solutions.</p>
+    <p><strong>Real-World Example:</strong></p>
+    <ul>
+      <li>A navigation app uses graph theory to model roads and employs algorithms like Dijkstra’s Algorithm to compute the shortest route.</li>
+      <li>Boolean logic and discrete math ensure that the underlying software runs efficiently and correctly.</li>
+    </ul>
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='1m3l3.html'">Previous Lesson</button>
+    <button onclick="window.location.href='1m4l2.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

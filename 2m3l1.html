@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 2: Computer Science - Module 3 Lesson 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { text-align: center; margin-bottom: 20px; }
+    h1, h2, h3, h4 { color: #333; }
+    section { margin-bottom: 25px; }
+    pre { background-color: #f4f4f4; padding: 10px; border-radius: 3px; }
+    ul, ol { margin-left: 20px; }
+    .button-container { text-align: center; margin-top: 30px; }
+    button { padding: 10px 20px; font-size: 16px; background-color: #4CAF50; 
+             color: #fff; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 2: Computer Science</h1>
+    <h2>Module 3: Software Development Practices</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 3.1: Programming Paradigms</h3>
+    <p>A programming paradigm is a style of programming. This lesson introduces four common paradigms along with simple examples.</p>
+  </section>
+
+  <!-- Imperative Programming -->
+  <section>
+    <h4>1. Imperative Programming</h4>
+    <p><strong>Idea:</strong> Provide a list of step-by-step instructions to change the program's state.</p>
+    <ol>
+      <li>Initialize variables (e.g., set a counter to 0).</li>
+      <li>Process data using loops.</li>
+      <li>Update state and produce the final result.</li>
+    </ol>
+    <p><strong>Example:</strong> Adding numbers in a list using Python:</p>
+    <pre>
+total = 0
+numbers = [2, 4, 6, 8]
+for number in numbers:
+    total += number
+print("The total is:", total)
+    </pre>
+  </section>
+
+  <!-- Declarative Programming -->
+  <section>
+    <h4>2. Declarative Programming</h4>
+    <p><strong>Idea:</strong> Describe what you want as an outcome, leaving the details to the computer.</p>
+    <p><strong>Example:</strong> SQL query:</p>
+    <pre>
+SELECT name, salary FROM Employees WHERE department = 'Sales';
+    </pre>
+  </section>
+
+  <!-- Functional Programming -->
+  <section>
+    <h4>3. Functional Programming</h4>
+    <p><strong>Idea:</strong> Write pure functions that return the same output for the same input without side effects.</p>
+    <p><strong>Example:</strong> Squaring numbers using Python:</p>
+    <pre>
+def square(x):
+    return x * x
+
+numbers = [1, 2, 3, 4]
+squares = list(map(square, numbers))
+print("Squares:", squares)
+    </pre>
+  </section>
+
+  <!-- Object-Oriented Programming -->
+  <section>
+    <h4>4. Object-Oriented Programming (OOP)</h4>
+    <p><strong>Idea:</strong> Organize code around objects that bundle data and behavior.</p>
+    <p><strong>Example:</strong> A simple BankAccount class in Python:</p>
+    <pre>
+class BankAccount:
+    def __init__(self, balance=0):
+        self.balance = balance
+    
+    def deposit(self, amount):
+        self.balance += amount
+    
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Insufficient funds")
+
+account = BankAccount(100)
+account.deposit(50)
+account.withdraw(30)
+print("Current balance:", account.balance)
+    </pre>
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='2m2l4.html'">Previous Lesson</button>
+    <button onclick="window.location.href='2m3l2.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

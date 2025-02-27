@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 2: Computer Science - Module 3 Lesson 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { text-align: center; margin-bottom: 20px; }
+    h1, h2, h3, h4 { color: #333; }
+    section { margin-bottom: 25px; }
+    pre { background-color: #f4f4f4; padding: 10px; border-radius: 3px; }
+    ul, ol { margin-left: 20px; }
+    .button-container { text-align: center; margin-top: 30px; }
+    button { padding: 10px 20px; font-size: 16px; background-color: #4CAF50; 
+             color: #fff; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+        <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+      </a>
+    <h1>Course 2: Computer Science</h1>
+    <h2>Module 3: Software Development Practices</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 3.2: Software Design Patterns</h3>
+    <p>Design patterns are reusable blueprints for solving common software design problems. This lesson covers three popular patterns.</p>
+  </section>
+
+  <!-- Singleton Pattern -->
+  <section>
+    <h4>1. The Singleton Pattern</h4>
+    <p><strong>Purpose:</strong> Ensure that a class has only one instance and provide a global point of access to it.</p>
+    <pre>
+class ConfigurationManager:
+    _instance = None
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super(ConfigurationManager, cls).__new__(cls)
+            cls._instance.settings = {}
+        return cls._instance
+
+    def set_setting(self, key, value):
+        self.settings[key] = value
+
+    def get_setting(self, key):
+        return self.settings.get(key)
+
+# Demonstration:
+config1 = ConfigurationManager()
+config2 = ConfigurationManager()
+config1.set_setting("theme", "dark")
+print("Theme from config2:", config2.get_setting("theme"))
+    </pre>
+  </section>
+
+  <!-- Observer Pattern -->
+  <section>
+    <h4>2. The Observer Pattern</h4>
+    <p><strong>Purpose:</strong> Establish a subscription mechanism to notify multiple objects (observers) about changes in a subject.</p>
+    <pre>
+class Subject:
+    def __init__(self):
+        self._observers = []
+    def attach(self, observer):
+        self._observers.append(observer)
+    def notify(self, message):
+        for observer in self._observers:
+            observer.update(message)
+
+class Observer:
+    def update(self, message):
+        print("Observer received message:", message)
+
+# Demonstration:
+subject = Subject()
+observer1 = Observer()
+observer2 = Observer()
+subject.attach(observer1)
+subject.attach(observer2)
+subject.notify("A new message has arrived!")
+    </pre>
+  </section>
+
+  <!-- Factory Pattern -->
+  <section>
+    <h4>3. The Factory Pattern</h4>
+    <p><strong>Purpose:</strong> Provide a way to create objects without specifying the exact class of the object that will be created.</p>
+    <pre>
+class Notification:
+    def notify(self, message):
+        pass
+
+class EmailNotification(Notification):
+    def notify(self, message):
+        print("Sending Email with message:", message)
+
+class SMSNotification(Notification):
+    def notify(self, message):
+        print("Sending SMS with message:", message)
+
+class NotificationFactory:
+    @staticmethod
+    def create_notification(notification_type):
+        if notification_type == "email":
+            return EmailNotification()
+        elif notification_type == "sms":
+            return SMSNotification()
+        else:
+            raise ValueError("Unknown notification type")
+
+# Demonstration:
+notification = NotificationFactory.create_notification("email")
+notification.notify("Welcome to our service!")
+    </pre>
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='2m3l1.html'">Previous Lesson</button>
+    <button onclick="window.location.href='2m3l3.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

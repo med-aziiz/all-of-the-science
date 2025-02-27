@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 1: Logic and Mathematics - Module 3 Lesson 2</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3, h4 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 1: Logic and Mathematics</h1>
+    <h2>Module 3: Advanced Mathematical Topics</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 3.2: Abstract Algebra &amp; Number Theory</h3>
+    <p>This lesson explores algebraic structures and the properties of integers, providing a clear insight into groups, rings, fields, and basic number theory.</p>
+  </section>
+
+  <!-- Step 1: Abstract Algebra – Building Mathematical Structures -->
+  <section>
+    <h4>Step 1: Abstract Algebra – Building Mathematical Structures</h4>
+    <p><strong>Understanding Groups</strong></p>
+    <p>
+      A <strong>group</strong> is a set <code>G</code> paired with an operation (denoted here by <code>&middot;</code>) that satisfies:
+    </p>
+    <ul>
+      <li><strong>Closure:</strong> For every <code>a, b &isin; G</code>, the result <code>a &middot; b</code> is also in <code>G</code>.</li>
+      <li><strong>Associativity:</strong> For every <code>a, b, c &isin; G</code>, <code>(a &middot; b) &middot; c = a &middot; (b &middot; c)</code>.</li>
+      <li><strong>Identity Element:</strong> There exists an element <code>e &isin; G</code> such that for every <code>a &isin; G</code>, <code>e &middot; a = a &middot; e = a</code>.</li>
+      <li><strong>Inverse Element:</strong> For every <code>a &isin; G</code>, there exists <code>a<sup>-1</sup> &isin; G</code> such that <code>a &middot; a<sup>-1</sup> = a<sup>-1</sup> &middot; a = e</code>.</li>
+    </ul>
+    <!-- an image of a diagram showing group structure (elements with operations) -->
+    <p><strong>Example – The Integers under Addition:</strong></p>
+    <ul>
+      <li>Set: <code>&mathbb;Z</code> (all integers)</li>
+      <li>Operation: Addition (<code>+</code>)</li>
+      <li>Closure, associativity, identity (0), and inverses (negative of each number) hold.</li>
+    </ul>
+    <p><strong>Rings and Fields</strong></p>
+    <ul>
+      <li><strong>Ring:</strong> A set with two operations (addition and multiplication) where addition forms an abelian group and multiplication is associative and distributes over addition. <em>Example:</em> <code>&mathbb;Z</code> forms a ring.</li>
+      <li><strong>Field:</strong> A ring in which every nonzero element has a multiplicative inverse. <em>Example:</em> The set of real numbers <code>&mathbb;R</code> is a field.</li>
+    </ul>
+    <p><strong>Homomorphisms – Structure-Preserving Maps</strong></p>
+    <p>
+      A homomorphism is a function between two algebraic structures that preserves the operations. For a group homomorphism <code>&phi;: G &rarr; H</code>, we have:
+      <code>&phi;(a &middot; b) = &phi;(a) &middot; &phi;(b)</code> for all <code>a, b &isin; G</code>.
+    </p>
+  </section>
+
+  <!-- Step 2: Number Theory – The Study of Integers -->
+  <section>
+    <h4>Step 2: Number Theory – The Study of Integers</h4>
+    <p><strong>Primes and Divisibility</strong></p>
+    <p>
+      A <strong>prime number</strong> is an integer greater than 1 that has no divisors other than 1 and itself.
+    </p>
+    <p><em>Example:</em> 7 is prime, while 8 (divisible by 1, 2, 4, 8) is not.</p>
+    <p><strong>Fundamental Theorem of Arithmetic</strong></p>
+    <p>
+      Every integer greater than 1 can be uniquely expressed as a product of prime numbers (up to the order of the factors). 
+      <em>Example:</em> 60 can be factored as <code>2 &times; 2 &times; 3 &times; 5</code>.
+    </p>
+    <p><strong>Modular Arithmetic – Mathematics on a Clock</strong></p>
+    <p>
+      In modular arithmetic numbers "wrap around" after reaching a specified modulus.
+      <em>Example:</em> In modulo 12 arithmetic, <code>15 mod 12 = 3</code> because 15 = 12 + 3, so we write: <code>15 &equiv; 3 (mod 12)</code>.
+    </p>
+    <p><strong>Congruence</strong></p>
+    <p>
+      Two numbers are congruent modulo <code>n</code> if they have the same remainder when divided by <code>n</code>.
+      <em>Example:</em> 17 and 5 are congruent modulo 12 since both yield a remainder of 5 when divided by 12 (<code>17 &equiv; 5 (mod 12)</code>).
+    </p>
+    <!-- an image of a prime factor tree and a clock showing modulo arithmetic -->
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='1m3l1.html'">Previous Lesson</button>
+
+    <button onclick="window.location.href='1m3l3.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 2: Computer Science - Module 3 Lesson 3</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { text-align: center; margin-bottom: 20px; }
+    h1, h2, h3, h4 { color: #333; }
+    section { margin-bottom: 25px; }
+    pre { background-color: #f4f4f4; padding: 10px; border-radius: 3px; }
+    ul, ol { margin-left: 20px; }
+    .button-container { text-align: center; margin-top: 30px; }
+    button { padding: 10px 20px; font-size: 16px; background-color: #4CAF50; 
+             color: #fff; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 2: Computer Science</h1>
+    <h2>Module 3: Software Development Practices</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 3.3: Testing, Debugging &amp; Version Control</h3>
+    <p>This lesson covers essential practices to ensure your code works correctly, including testing, debugging, and using version control systems like Git.</p>
+  </section>
+
+  <!-- Unit Testing -->
+  <section>
+    <h4>1. Unit Testing</h4>
+    <p><strong>Definition:</strong> Testing small, individual parts of your code to verify correct functionality.</p>
+    <p><em>Example:</em> Testing a function that calculates the area of a circle:</p>
+    <pre>
+import math
+
+def area_of_circle(radius):
+    return math.pi * radius * radius
+
+def test_area_of_circle():
+    expected = math.pi * 3 * 3
+    assert abs(area_of_circle(3) - expected) < 0.0001, "Test failed: Incorrect area calculation."
+
+test_area_of_circle()
+print("Unit test passed!")
+    </pre>
+  </section>
+
+  <!-- Debugging -->
+  <section>
+    <h4>2. Debugging</h4>
+    <p><strong>Definition:</strong> The process of identifying and fixing errors in your code.</p>
+    <p><strong>Techniques:</strong></p>
+    <ul>
+      <li>Using print statements to display variable values.</li>
+      <li>Utilizing interactive debuggers (e.g., Python's <code>pdb</code>).</li>
+      <li>Explaining your code to yourself or a “rubber duck” to spot mistakes.</li>
+    </ul>
+    <pre>
+def divide(a, b):
+    print("a =", a, "b =", b)
+    return a / b
+
+print("Result:", divide(10, 2))
+    </pre>
+  </section>
+
+  <!-- Version Control -->
+  <section>
+    <h4>3. Version Control</h4>
+    <p><strong>Definition:</strong> Tools and practices to track changes in your code over time, facilitating collaboration and rollback when needed.</p>
+    <p><strong>Example using Git:</strong></p>
+    <pre>
+# Create a new repository
+mkdir my_project
+cd my_project
+git init
+
+# Create a file
+echo "print('Hello, Version Control!')" > hello.py
+
+# Add and commit the file
+git add hello.py
+git commit -m "Initial commit: add hello.py"
+
+# Create and switch to a new branch
+git branch feature-x
+git checkout feature-x
+
+# Modify the file and commit changes
+echo "print('Feature X in progress')" >> hello.py
+git add hello.py
+git commit -m "Add feature X update in hello.py"
+    </pre>
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='2m3l2.html'">Previous Lesson</button>
+    <button onclick="window.location.href='2m3l4.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

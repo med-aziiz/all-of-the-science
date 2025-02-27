@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 3: Physics - Module 1 Lesson 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { text-align: center; margin-bottom: 20px; }
+    h1, h2, h3, h4 { color: #333; }
+    section { margin-bottom: 25px; }
+    ul, ol { margin-left: 20px; }
+    .button-container { text-align: center; margin-top: 30px; }
+    button { padding: 10px 20px; margin: 5px; font-size: 16px; background-color: #4CAF50; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:disabled { background-color: #ccc; cursor: not-allowed; }
+    code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 3: Physics</h1>
+    <h2>Module 1: Classical Mechanics</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 1.1: Kinematics &amp; Dynamics</h3>
+    <p>This lesson introduces the language of motion—kinematics—and then explains dynamics, which tells us why objects move.</p>
+  </section>
+
+  <!-- Step 1: Kinematics – Describing Motion -->
+  <section>
+    <h4>Step 1: Kinematics – Describing Motion</h4>
+    <p><strong>Key Concepts in Kinematics:</strong></p>
+    <ul>
+      <li><strong>Position:</strong> The location of an object in space.  
+          <em>Analogy:</em> A dot on a map showing your location.</li>
+      <li><strong>Displacement:</strong> The change in position from an initial to a final point.  
+          <em>Example:</em> Walking 3 m east then 2 m east gives a displacement of 5 m east.</li>
+      <li><strong>Distance:</strong> The total path length traveled, regardless of direction.  
+          <em>Example:</em> Walking 3 m east then 2 m west gives a distance of 5 m but a displacement of 1 m east.</li>
+      <li><strong>Velocity:</strong> The rate of change of displacement with time.  
+          <code>v = Δx/Δt</code>  
+          <em>Example:</em> Moving 10 m north in 2 s gives an average velocity of 5 m/s north.</li>
+      <li><strong>Acceleration:</strong> The rate of change of velocity with time.  
+          <code>a = Δv/Δt</code>  
+          <em>Example:</em> Increasing velocity from 0 m/s to 10 m/s in 2 s gives 5 m/s².</li>
+    </ul>
+    <!-- an image of a moving car with vectors showing displacement, velocity, and acceleration -->
+    <p><strong>Detailed Example:</strong></p>
+    <ol>
+      <li>At time t = 0: A car is at x = 0 with v = 0.</li>
+      <li>After 4 s: The car reaches v = 8 m/s.</li>
+      <li>Average acceleration: <code>a = (8 m/s - 0 m/s)/4 s = 2 m/s²</code>.</li>
+      <li>Displacement (using <code>x = v_i t + ½at²</code>): <code>x = 0 + ½(2)(4²) = 16 m</code>.</li>
+    </ol>
+  </section>
+
+  <!-- Step 2: Dynamics – Understanding Forces -->
+  <section>
+    <h4>Step 2: Dynamics – Understanding Forces and Motion</h4>
+    <p><strong>Newton’s Laws of Motion:</strong></p>
+    <ul>
+      <li><strong>First Law (Inertia):</strong> An object remains at rest or in uniform motion unless acted upon by an external force.  
+          <em>Analogy:</em> A hockey puck on ice keeps moving until friction stops it.</li>
+      <li><strong>Second Law (F = m × a):</strong> The force on an object equals its mass times acceleration.  
+          <em>Example:</em> A 2 kg object accelerating at 3 m/s² requires 6 N of force.</li>
+      <li><strong>Third Law (Action-Reaction):</strong> For every action, there is an equal and opposite reaction.  
+          <em>Example:</em> Pushing a wall causes it to push back with equal force.</li>
+    </ul>
+    <!-- an image illustrating Newton's three laws with simple diagrams -->
+    <p><strong>Detailed Example of Dynamics:</strong> Pushing a shopping cart</p>
+    <ul>
+      <li>Mass of cart: 10 kg.</li>
+      <li>Desired acceleration: 1 m/s².</li>
+      <li>Required force: <code>F = 10 kg × 1 m/s² = 10 N</code>.</li>
+      <li>If friction exerts 2 N opposing motion, the applied force must be 12 N.</li>
+    </ul>
+  </section>
+
+  <div class="button-container">
+    <button disabled>Previous Lesson</button>
+    <button onclick="window.location.href='3m1l2.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

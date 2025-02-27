@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 2: Computer Science - Module 2 Lesson 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    header { text-align: center; margin-bottom: 20px; }
+    h1, h2, h3, h4 { color: #333; }
+    section { margin-bottom: 25px; }
+    pre { background-color: #f4f4f4; padding: 10px; border-radius: 3px; }
+    ul, ol { margin-left: 20px; }
+    .button-container { text-align: center; margin-top: 30px; }
+    button { padding: 10px 20px; font-size: 16px; background-color: #4CAF50; 
+             color: #fff; border: none; border-radius: 4px; cursor: pointer; margin: 5px; }
+    button:disabled { background-color: #ccc; cursor: not-allowed; }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 2: Computer Science</h1>
+    <h2>Module 2: Data Structures &amp; Algorithms</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 2.2: Algorithm Design &amp; Complexity</h3>
+    <p>An algorithm is a step-by-step procedure to solve a problem. This lesson explains how to design algorithms and analyze their efficiency.</p>
+  </section>
+
+  <!-- What Is an Algorithm -->
+  <section>
+    <h4>What Is an Algorithm?</h4>
+    <p><strong>Definition:</strong> A finite, step-by-step procedure to solve a specific problem or perform a task.</p>
+    <p><strong>Analogy:</strong> A recipe for baking a cake.</p>
+  </section>
+
+  <!-- Designing an Algorithm -->
+  <section>
+    <h4>Designing an Algorithm: A Detailed Walkthrough</h4>
+    <ol>
+      <li><strong>Understand the Problem:</strong> Restate it in your own words; identify input and desired output.
+        <br><em>Example:</em> “Find the largest number in a list.”
+      </li>
+      <li><strong>Break Down the Problem:</strong> Divide the problem into smaller steps and write pseudocode.
+        <br><em>Pseudocode Example:</em>
+        <pre>
+function findMax(list):
+    max = list[0]
+    for each element in list:
+        if element > max:
+            max = element
+    return max
+        </pre>
+      </li>
+      <li><strong>Analyze Efficiency:</strong>
+        <ul>
+          <li><strong>Time Complexity:</strong> How the running time grows (e.g., O(n)).</li>
+          <li><strong>Space Complexity:</strong> How much extra memory is needed (e.g., O(1)).</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='2m2l1.html'">Previous Lesson</button>
+    <button onclick="window.location.href='2m2l3.html'">Next Lesson</button>
+  </div>
+</body>
+</html>

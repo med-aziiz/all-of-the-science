@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 1: Logic and Mathematics - Module 3 Lesson 1</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3, h4 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="all of the science.png" alt="All of the Science" class="site-logo" />
+    </a>
+    <h1>Course 1: Logic and Mathematics</h1>
+    <h2>Module 3: Advanced Mathematical Topics</h2>
+  </header>
+
+  <section>
+    <h3>Lesson 3.1: Calculus &amp; Analysis</h3>
+    <p>This lesson covers the fundamental ideas of calculus and analysis. We’ll take a step-by-step approach to understand limits, continuity, derivatives, integrals, and convergence.</p>
+  </section>
+
+  <!-- Step 1: Understanding Limits -->
+  <section>
+    <h4>Step 1: Understanding Limits</h4>
+    <p><strong>What is a Limit?</strong></p>
+    <p>
+      <strong>Definition:</strong> The limit of a function <code>f(x)</code> as <code>x</code> approaches a value <code>c</code> is the value that <code>f(x)</code> gets arbitrarily close to—even if <code>f(c)</code> is not defined.
+      We write this as: <code>lim(x→c) f(x) = L</code>.
+    </p>
+    <!-- an image of a graph showing a function approaching a limit -->
+    <p><strong>A Detailed Example: Factoring to Find a Limit</strong></p>
+    <p>
+      Consider the function: <code>f(x) = (x² - 1) / (x - 1)</code>.
+      Notice that when <code>x = 1</code> the function is undefined (denominator becomes 0). However, by factoring:
+    </p>
+    <ol>
+      <li>Recognize that <code>x² - 1</code> is a difference of two squares. (Recall: <code>a² - b² = (a - b)(a + b)</code>.)</li>
+      <li>Here, <code>a = x</code> and <code>b = 1</code>, so <code>x² - 1 = (x - 1)(x + 1)</code>.</li>
+      <li>Simplify: <code>f(x) = [(x - 1)(x + 1)]/(x - 1) = x + 1</code> for <code>x ≠ 1</code>.</li>
+      <li>Then, <code>lim(x→1) f(x) = 1 + 1 = 2</code>.</li>
+    </ol>
+  </section>
+
+  <!-- Step 2: Establishing Continuity -->
+  <section>
+    <h4>Step 2: Establishing Continuity</h4>
+    <p><strong>What is Continuity?</strong></p>
+    <p>
+      A function <code>f(x)</code> is continuous at a point <code>c</code> if:
+    </p>
+    <ul>
+      <li><code>f(c)</code> is defined.</li>
+      <li><code>lim(x→c) f(x)</code> exists.</li>
+      <li><code>lim(x→c) f(x) = f(c)</code>.</li>
+    </ul>
+    <!-- an image of a smooth, unbroken curve representing continuity -->
+    <p><em>Everyday Analogy:</em> Drawing a continuous curve without lifting your pencil.</p>
+  </section>
+
+  <!-- Step 3: Derivatives – Measuring Instantaneous Change -->
+  <section>
+    <h4>Step 3: Derivatives – Measuring Instantaneous Change</h4>
+    <p><strong>What is a Derivative?</strong></p>
+    <p>
+      The derivative of a function <code>f(x)</code> at a point <code>x</code> is given by:
+      <code>f'(x) = lim(h→0) [f(x+h) - f(x)]/h</code>.
+      This represents the slope of the tangent line at that point.
+    </p>
+    <p><strong>Example with <code>f(x) = x²</code>:</strong></p>
+    <ol>
+      <li>Set up the difference quotient: <code>[f(x+h) - f(x)]/h = [(x+h)² - x²] / h</code>.</li>
+      <li>Expand: <code>(x+h)² = x² + 2xh + h²</code>.</li>
+      <li>Simplify: <code>(2xh + h²)/h = 2x + h</code> (for <code>h ≠ 0</code>).</li>
+      <li>Take the limit as <code>h → 0</code>: <code>f'(x) = 2x</code>.</li>
+    </ol>
+  </section>
+
+  <!-- Step 4: Integrals – Summing Infinitesimal Pieces -->
+  <section>
+    <h4>Step 4: Integrals – Summing Infinitesimal Pieces</h4>
+    <p><strong>What is an Integral?</strong></p>
+    <p>
+      A definite integral computes the net area under the curve of <code>f(x)</code> from <code>x = a</code> to <code>x = b</code>:
+      <code>∫[a to b] f(x) dx</code>.
+    </p>
+    <p>
+      <strong>The Fundamental Theorem of Calculus</strong> connects differentiation and integration—differentiating an integral returns the original function (with the appropriate conditions).
+    </p>
+    <p><strong>Example:</strong> Find the area under <code>f(x) = x</code> from <code>x = 0</code> to <code>x = 3</code>:</p>
+    <ol>
+      <li>Set up the integral: <code>∫[0 to 3] x dx</code>.</li>
+      <li>Find the antiderivative: <code>x²/2</code>.</li>
+      <li>Evaluate: <code>[x²/2] from 0 to 3 = (9/2) - 0 = 4.5</code>.</li>
+    </ol>
+    <!-- an image of an area under a curve being shaded -->
+  </section>
+
+  <!-- Step 5: Convergence – Understanding Infinite Processes -->
+  <section>
+    <h4>Step 5: Convergence – Understanding Infinite Processes</h4>
+    <p><strong>What is Convergence?</strong></p>
+    <p>
+      A sequence or series converges if its terms approach a specific finite value as the process continues indefinitely.
+    </p>
+    <p><strong>Example: Infinite Geometric Series</strong></p>
+    <p>
+      Consider the series: <code>1/2 + 1/4 + 1/8 + …</code>. Written in summation form:
+      <code>S = Σ (1/2)ⁿ for n=1 to ∞</code>.
+      Using the formula for an infinite geometric series (<code>S = a/(1 - r)</code> with <code>a = 1/2</code> and <code>r = 1/2</code>), we get:
+      <code>S = (1/2)/(1 - 1/2) = 1</code>.
+    </p>
+    <!-- an image of an infinite series converging to a finite value -->
+  </section>
+
+  <div class="button-container">
+    <button onclick="window.location.href='1m2l3.html'">Previous Lesson</button>
+
+    <button onclick="window.location.href='1m3l2.html'">Next Lesson</button>
+  </div>
+</body>
+</html>
