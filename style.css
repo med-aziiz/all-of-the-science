@@ -1,0 +1,324 @@
+/* modern-styles.css */
+
+/* Define theme variables for easy customization */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2;
+    --accent-color: #f5a623;
+    --background-gradient: linear-gradient(135deg, #4a90e2, #50e3c2);
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --text-color: #333;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Global resets and smooth box sizing */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply an animated gradient background to the body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background: var(--background-gradient);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Keyframe animation for dynamic background movement */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Header styling with translucency and a subtle blur effect */
+  header {
+    background: var(--header-bg);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Headings with modern sizes and primary color accents */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  h2, h3, h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  /* Section styling for content areas with rounded corners and a light shadow */
+  section {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  
+  /* Text elements and lists with enhanced readability */
+  p, li, ol {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  /* Button container centered with some spacing */
+  .button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Stylish, rounded buttons with smooth hover transitions */
+  button {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    p, li, ol { font-size: 1rem; }
+    button { padding: 10px 20px; font-size: 0.9rem; }
+  }
+
+  .button-container h3{
+      color: green;
+  }
+
+  /* modern-course.css */
+
+/* Define theme variables for consistent styling */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #ffbe0b;
+    --accent-color: #fb5607;
+    --text-color: #333;
+    --background-start: #f0f4f8;
+    --background-end: #d9e2ec;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+  }
+  
+  /* Global reset and typography */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--background-start), var(--background-end));
+    min-height: 100vh;
+    line-height: 1.6;
+    padding: 40px 20px;
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease infinite;
+  }
+  
+  /* Animated gradient background movement */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Header styling with subtle shadow and centered text */
+  header {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+  }
+  
+  /* Section styling for modules with spacing and card-like appearance */
+  section {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+  }
+  
+  details {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+  }
+  
+  details[open] {
+    transform: scale(1.02);
+  }
+  
+  summary {
+    padding: 15px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    background: var(--primary-color);
+    color: #fff;
+    transition: background var(--transition-speed);
+  }
+  
+  summary:hover {
+    background: var(--accent-color);
+  }
+  
+  /* Custom arrow indicator for details */
+  summary::marker {
+    display: none;
+  }
+  
+  summary::after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    transition: transform var(--transition-speed);
+  }
+  
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+  
+  /* Styling the module links list */
+  ul {
+    list-style: none;
+    padding: 10px 20px 20px 40px;
+    background: #fff;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    transition: color var(--transition-speed);
+  }
+  
+  a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Get started button container styling */
+  .get-started {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .get-started button {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .get-started button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    summary {
+      font-size: 1rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+    .get-started button {
+      font-size: 1rem;
+      padding: 10px 24px;
+    }
+  }
+  
+  .button-container h3{
+    color: green;
+}
+  
+.page-header {
+    display: flex;              /* Allows logo and text to sit side by side */
+    align-items: center;        /* Vertically center items */
+    gap: 20px;                  /* Spacing between logo and text container */
+    margin-bottom: 20px;        /* Space below the header */
+  }
+
+  /* Logo Link (no underline, clickable area) */
+  .logo-link {
+    text-decoration: none;
+  }
+
+  /* Logo Image */
+  .site-logo {
+      float: left;
+    width: 60px;                /* Adjust size to your preference */
+    height: auto;
+    cursor: pointer;
+  }
+
+  /* Title Container */
+  .title-container {
+    display: flex;
+    flex-direction: column;     /* Stacks h1 and h2 vertically */
+    justify-content: center;    /* Vertically center the text if needed */
+  }
+
+  /* Example styling for the headings in the header */
+  .title-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  .title-container h2 {
+      
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+  }
